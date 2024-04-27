@@ -1,0 +1,9 @@
+<p *hasRole="'ADMIN'">Visisble by Admin</p>
+
+<p *hasRole="'ADMIN'; and: withThisPriviliege">
+  Visisble by Admin et avec privilege
+</p>
+<p *hasRole="'[MANAGER,ADMIN]'">Visisble by Manager et Admin</p>
+<p *hasRole="'ADMIN'; and: !withThisPriviliege">
+  Visisble by Admin et sans privilege
+</p>
